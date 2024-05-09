@@ -1,3 +1,4 @@
+code = """
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -23,4 +24,7 @@ accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", accuracy)
 
 tree_rules = export_text(clf, feature_names=["Feature 1", "Feature 2"])
-print("Decision Tree Rules:\n", tree_rules)
+print("Decision Tree Rules:\\n", tree_rules)
+"""
+
+print(code)
