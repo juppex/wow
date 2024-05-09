@@ -1,3 +1,4 @@
+code = """
 import pandas as pd
 
 data1 = {
@@ -20,3 +21,6 @@ merged_df['Total_Score'] = merged_df['Score1'] + merged_df['Score2']
 
 print("Merged Dataset with Total Score:")
 print(merged_df)
+"""
+
+print(code)
