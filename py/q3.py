@@ -1,5 +1,7 @@
+code = """
 import pandas as pd
 import numpy as np
+
 # Create a sample market basket dataset
 data = {
  'transaction_id': [1,2,3,4,5,6],
@@ -13,5 +15,8 @@ labels=['Low', 'Medium', 'High']
 # Discretize continuous variables (price)
 df['price_category'] = pd.cut(df['price'], bins=bins, labels=labels)
 # Display the DataFrame with the new columns
-print("\nDataFrame with discretized continuous variable (price):")
+print("\\nDataFrame with discretized continuous variable (price):")
 print(df)
+"""
+
+print(code)
