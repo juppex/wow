@@ -1,7 +1,9 @@
+code = """
 import pandas as pd
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
+
 # Sample data
 data = {
  'customerid': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -22,6 +24,7 @@ for k in range(1, 11):
  kmeans = KMeans(n_clusters=k, random_state=42)
  kmeans.fit(X_scaled)
  inertias.append(kmeans.inertia_)
+
 # Plot the inertia vs. number of clusters
 plt.plot(range(1, 11), inertias, marker='o')
 plt.title('Elbow Method')
@@ -46,3 +49,6 @@ plt.grid(True)
 plt.show()
 
 print(df)
+"""
+
+print(code)
