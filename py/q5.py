@@ -1,8 +1,10 @@
+code = """
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
+
 # Sample email data
 emails = [
  {"text": "Get a free laptop now!", "label": "spam"},
@@ -27,5 +29,8 @@ classification_report_output = (classification_report(labels_test,predictions))
 # Print accuracies
 print(f"Accuracy: {accuracy:.2f}")
 # Print classification report
-print("\nClassification Report:")
+print("\\nClassification Report:")
 print(classification_report_output)
+"""
+
+print(code)
