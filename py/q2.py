@@ -1,3 +1,4 @@
+code = """
 from sklearn.feature_selection import VarianceThreshold
 xt = [[0,1,0],
  [0,0,0],
@@ -11,3 +12,6 @@ print('Original Dataset: ')
 print(xt)
 print('Reduced Dataset: ')
 print(xt_red)
+"""
+
+print(code)
