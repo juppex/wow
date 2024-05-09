@@ -1,6 +1,8 @@
+code = """
 from mlxtend.preprocessing import TransactionEncoder
 from mlxtend.frequent_patterns import apriori, association_rules
 import pandas as pd
+
 data = {
  'Transaction': [1, 2, 3, 4, 5],
  'Items': [['Bread', 'Milk'],
@@ -19,3 +21,6 @@ frequent_itemsets = apriori(df, min_support=0.5, use_colnames=True)
 association_rules_df = association_rules(frequent_itemsets, metric='lift', min_threshold=1.0)
 print("Frequent Itemsets:")
 print(frequent_itemsets)
+"""
+
+print(code)
