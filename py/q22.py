@@ -1,3 +1,4 @@
+code = """
 import numpy as np
 import pandas as pd
 from sklearn.datasets import make_classification
@@ -36,3 +37,6 @@ plt.title('Explained Variance Ratio')
 plt.xlabel('Principal Component')
 plt.ylabel('Explained Variance Ratio Vs Number of principal Components')
 plt.show()
+"""
+
+print(code)
